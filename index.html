@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#f5f0e7">
+<meta name="description" content="LocalCart — a curated home for Ugandan art, craft, and culture-led design.">
+<title>LocalCart — Made here. Loved everywhere.</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap');
+:root{--paper:#f5f0e7;--paper2:#ebe3d5;--ink:#202820;--muted:#6c7167;--green:#244b3b;--green2:#dce6d8;--clay:#b85e3f;--line:#d8d0c3;--white:#fffdf8;--gold:#d5a45b;--serif:'Playfair Display',Georgia,serif;--sans:'DM Sans',Arial,sans-serif}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--sans);font-size:15px;line-height:1.55}button,input,select{font:inherit}button,a{-webkit-tap-highlight-color:transparent}a{color:inherit}.wrap{width:min(1180px,92%);margin:auto}.announcement{background:var(--green);color:#f9f5ed;text-align:center;padding:8px 12px;font-size:11px;letter-spacing:.12em;text-transform:uppercase}.header{border-bottom:1px solid var(--line);background:rgba(245,240,231,.94);position:sticky;top:0;z-index:20;backdrop-filter:blur(12px)}.nav{height:76px;display:flex;align-items:center;justify-content:space-between;gap:24px}.brand{text-decoration:none;display:flex;align-items:center;gap:10px;font-weight:700;letter-spacing:-.055em;font-size:25px}.brand-mark{width:34px;height:34px;border-radius:50% 50% 50% 8px;background:var(--clay);display:grid;place-items:center;color:#fffdf8;font-family:var(--serif);font-size:19px;transform:rotate(-8deg)}.brand span:last-child{color:var(--clay)}.nav-links{display:flex;align-items:center;gap:27px}.nav-links a{text-decoration:none;font-size:13px;color:#4f554c}.nav-links a:hover{color:var(--clay)}.nav-actions{display:flex;gap:9px;align-items:center}.icon-btn{border:1px solid var(--line);background:transparent;color:var(--ink);border-radius:50px;padding:9px 13px;display:flex;align-items:center;gap:7px;cursor:pointer}.icon-btn:hover{border-color:var(--green)}.cart-count{background:var(--clay);color:white;border-radius:50%;font-size:10px;min-width:19px;height:19px;display:inline-grid;place-items:center;padding:0 4px}.menu-btn{display:none}.hero{padding:36px 0 58px;display:grid;grid-template-columns:.94fr 1.06fr;gap:45px;align-items:center}.hero-copy{padding:18px 0 20px}.eyebrow{display:flex;align-items:center;gap:9px;color:var(--clay);font-size:11px;font-weight:700;letter-spacing:.17em;text-transform:uppercase}.eyebrow:before{content:"";width:25px;height:1px;background:var(--clay)}h1,h2,h3,p{margin-top:0}h1{font-family:var(--serif);font-weight:500;font-size:clamp(46px,6vw,77px);line-height:1.02;letter-spacing:-.055em;margin:19px 0 20px;max-width:570px}h1 em{font-weight:500;color:var(--clay)}.hero-copy>p{color:var(--muted);max-width:430px;font-size:16px}.hero-buttons{display:flex;gap:12px;flex-wrap:wrap;margin-top:27px}.button{display:inline-flex;justify-content:center;align-items:center;gap:12px;text-decoration:none;border:1px solid var(--green);background:var(--green);color:#fffdf8;padding:13px 18px;border-radius:3px;font-size:12px;font-weight:700;cursor:pointer;transition:transform .2s,background .2s}.button:hover{background:#183a2b;transform:translateY(-2px)}.button.secondary{background:transparent;color:var(--green)}.button.secondary:hover{background:var(--green2)}.hero-meta{display:flex;gap:17px;flex-wrap:wrap;margin-top:32px;color:var(--muted);font-size:11px}.hero-meta span{display:flex;align-items:center;gap:6px}.hero-meta b{color:var(--clay)}.hero-art{position:relative;min-height:490px}.hero-photo{position:absolute;inset:0 0 22px 34px;overflow:hidden;background:#d6b99a}.hero-photo img{width:100%;height:100%;object-fit:cover;display:block;filter:saturate(.86)}.photo-caption{position:absolute;left:0;bottom:0;background:var(--white);padding:15px 19px;box-shadow:0 5px 25px #34241612;max-width:230px}.photo-caption small{display:block;color:var(--clay);font-size:10px;text-transform:uppercase;letter-spacing:.13em;margin-bottom:3px}.photo-caption strong{font-family:var(--serif);font-size:19px;font-weight:500}.round-stamp{position:absolute;right:-17px;top:23px;width:91px;height:91px;background:var(--gold);border-radius:50%;display:grid;place-items:center;text-align:center;color:var(--ink);font-family:var(--serif);font-size:14px;line-height:1.15;transform:rotate(10deg);border:1px solid #bd8b42}.round-stamp span{font-family:var(--sans);font-size:9px;text-transform:uppercase;letter-spacing:.1em}.section{padding:53px 0}.section-head{display:flex;justify-content:space-between;align-items:end;gap:20px;margin-bottom:24px}.section-kicker{font-size:10px;letter-spacing:.17em;text-transform:uppercase;color:var(--clay);font-weight:700;margin-bottom:8px}.section h2{font-family:var(--serif);font-size:clamp(31px,4vw,45px);font-weight:500;letter-spacing:-.04em;line-height:1.1;margin-bottom:0}.section-intro{color:var(--muted);font-size:13px;max-width:320px;margin-bottom:3px}.categories{display:grid;grid-template-columns:repeat(4,1fr);gap:13px}.category{position:relative;min-height:210px;border:0;padding:0;text-align:left;background:#d5c6b0;overflow:hidden;cursor:pointer;color:white}.category img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform .5s;filter:brightness(.78) saturate(.82)}.category:hover img{transform:scale(1.05)}.category:after{content:"";position:absolute;inset:35% 0 0;background:linear-gradient(transparent,rgba(22,27,21,.83))}.category-text{position:absolute;z-index:1;left:16px;bottom:15px;right:12px}.category-text small{display:block;text-transform:uppercase;font-size:9px;letter-spacing:.14em;color:#f1d5ae}.category-text strong{display:block;font-family:var(--serif);font-size:23px;font-weight:500}.category-text span{font-size:11px}.shop-section{background:var(--paper2);padding:58px 0 65px}.shop-tools{display:flex;align-items:center;gap:9px;flex-wrap:wrap}.search{position:relative;min-width:210px}.search input{width:100%;padding:11px 13px 11px 36px;border:1px solid #cec4b5;background:var(--white);border-radius:2px;outline:none;font-size:12px}.search input:focus{border-color:var(--green)}.search span{position:absolute;left:12px;top:8px;color:var(--muted)}.filter{border:1px solid #cec4b5;background:var(--white);padding:10px 12px;border-radius:2px;font-size:12px;color:var(--ink)}.product-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:17px}.product{min-width:0}.product-image{position:relative;aspect-ratio:4/4.4;background:#ded2c0;overflow:hidden}.product-image img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .4s}.product:hover .product-image img{transform:scale(1.04)}.product-tag{position:absolute;top:11px;left:11px;background:var(--white);font-size:9px;text-transform:uppercase;letter-spacing:.1em;padding:6px 8px}.quick-add{position:absolute;bottom:10px;left:10px;right:10px;background:var(--white);border:0;padding:10px;font-size:11px;font-weight:700;opacity:0;transform:translateY(5px);transition:.2s;cursor:pointer}.product:hover .quick-add,.quick-add:focus{opacity:1;transform:translateY(0)}.product-info{padding:12px 1px 4px}.product-type{font-size:9px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}.product-name{font-family:var(--serif);font-size:19px;font-weight:500;margin:4px 0 5px;line-height:1.2}.product-bottom{display:flex;align-items:center;justify-content:space-between;gap:10px}.price{font-size:13px;font-weight:700}.product-rating{font-size:10px;color:var(--muted)}.product-add-mobile{display:none;width:100%;margin-top:10px;background:transparent;border:1px solid var(--line);padding:9px;font-size:11px}.empty-state{grid-column:1/-1;padding:45px 10px;text-align:center;color:var(--muted)}.story{display:grid;grid-template-columns:1fr 1fr;gap:52px;align-items:center}.story-image{height:380px;position:relative;background:#d5c1a5}.story-image img{width:100%;height:100%;object-fit:cover}.story-image:before{content:"";position:absolute;left:-12px;top:15px;bottom:-12px;right:15px;border:1px solid var(--clay);pointer-events:none}.story-copy{padding:10px 0}.story-copy h2{font-size:clamp(34px,4vw,48px);margin-bottom:18px}.story-copy p{color:var(--muted);font-size:14px}.story-note{border-left:2px solid var(--clay);padding:10px 0 10px 15px;margin:22px 0;color:var(--ink);font-family:var(--serif);font-size:17px}.values{display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid var(--line);border-bottom:1px solid var(--line);margin-top:35px}.value{padding:22px 24px;border-right:1px solid var(--line)}.value:first-child{padding-left:0}.value:last-child{border-right:0}.value b{font-family:var(--serif);font-size:19px;font-weight:500}.value p{font-size:11px;color:var(--muted);margin:6px 0 0}.newsletter{background:var(--green);color:#f9f5ed;padding:45px 0}.newsletter-inner{display:flex;align-items:center;justify-content:space-between;gap:25px}.newsletter h2{font-family:var(--serif);font-size:34px;font-weight:500;margin:0 0 6px}.newsletter p{font-size:12px;color:#d2dcd3;margin:0}.newsletter-form{display:flex;gap:8px;max-width:410px;width:100%}.newsletter-form input{min-width:0;flex:1;padding:12px;background:#fffdf8;border:0;border-radius:2px;font-size:12px}.newsletter-form button{background:var(--gold);border:0;padding:12px 15px;font-size:11px;font-weight:700;cursor:pointer;color:var(--ink)}footer{padding:36px 0 22px}.footer-main{display:grid;grid-template-columns:1.5fr 1fr 1fr 1fr;gap:30px;padding-bottom:29px}.footer-about p{color:var(--muted);font-size:12px;max-width:280px;margin-top:13px}.footer-col b{display:block;font-size:10px;text-transform:uppercase;letter-spacing:.13em;margin-bottom:12px}.footer-col a{display:block;text-decoration:none;color:var(--muted);font-size:12px;margin:7px 0}.footer-col a:hover{color:var(--clay)}.footer-bottom{border-top:1px solid var(--line);padding-top:15px;display:flex;justify-content:space-between;gap:15px;color:var(--muted);font-size:10px;flex-wrap:wrap}.drawer-backdrop,.modal-backdrop{position:fixed;inset:0;background:#141b17a8;z-index:50;opacity:0;pointer-events:none;transition:opacity .25s}.drawer-backdrop.open,.modal-backdrop.open{opacity:1;pointer-events:auto}.cart-drawer{position:fixed;z-index:60;top:0;right:0;bottom:0;width:min(430px,100%);background:var(--paper);padding:23px;transform:translateX(102%);transition:transform .3s;display:flex;flex-direction:column}.cart-drawer.open{transform:translateX(0)}.drawer-head{display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid var(--line);padding-bottom:17px}.drawer-head h2{font-family:var(--serif);font-size:29px;font-weight:500;margin:0}.close-btn{border:1px solid var(--line);border-radius:50%;width:36px;height:36px;background:transparent;font-size:20px;cursor:pointer}.cart-items{overflow:auto;flex:1;padding:12px 0}.cart-row{display:grid;grid-template-columns:72px 1fr auto;gap:12px;padding:13px 0;border-bottom:1px solid var(--line)}.cart-row img{width:72px;height:78px;object-fit:cover;background:var(--paper2)}.cart-row h3{font-family:var(--serif);font-size:16px;font-weight:500;margin:2px 0}.cart-row small{color:var(--muted);font-size:11px}.qty{display:flex;align-items:center;gap:9px;margin-top:9px}.qty button{width:24px;height:24px;border:1px solid var(--line);background:transparent;cursor:pointer}.cart-price{font-size:12px;font-weight:700;white-space:nowrap}.cart-summary{border-top:1px solid var(--line);padding-top:17px}.summary-line{display:flex;justify-content:space-between;margin:7px 0;font-size:13px}.summary-line.total{font-weight:700;font-size:16px;padding-top:9px}.cart-summary .button{width:100%;margin-top:12px}.cart-empty{text-align:center;color:var(--muted);padding:60px 15px}.cart-empty div{font-size:35px;margin-bottom:10px}.modal{position:fixed;z-index:70;left:50%;top:50%;transform:translate(-50%,-45%);width:min(480px,calc(100% - 28px));max-height:90vh;overflow:auto;background:var(--paper);padding:25px;opacity:0;pointer-events:none;transition:.25s}.modal.open{opacity:1;pointer-events:auto;transform:translate(-50%,-50%)}.modal h2{font-family:var(--serif);font-weight:500;font-size:30px;margin:0 0 5px}.modal>p{color:var(--muted);font-size:12px}.form-field{display:block;margin:13px 0}.form-field span{display:block;font-size:11px;font-weight:700;margin-bottom:5px}.form-field input,.form-field select{width:100%;border:1px solid var(--line);background:var(--white);padding:12px;font-size:13px;border-radius:2px}.modal .button{width:100%;margin-top:8px}.notice{font-size:11px!important;background:var(--green2);padding:10px;color:var(--green)!important}.toast{position:fixed;z-index:100;bottom:22px;left:50%;transform:translate(-50%,20px);background:var(--ink);color:white;padding:12px 18px;font-size:12px;opacity:0;pointer-events:none;transition:.25s;max-width:90%;text-align:center}.toast.show{opacity:1;transform:translate(-50%,0)}
+@media(max-width:850px){.nav-links{gap:15px}.hero{gap:25px}.hero-art{min-height:410px}.product-grid{grid-template-columns:repeat(2,1fr);gap:23px 14px}.quick-add{display:none}.product-add-mobile{display:block}.categories{grid-template-columns:repeat(2,1fr)}.category{min-height:190px}.story{gap:30px}.footer-main{grid-template-columns:1.3fr 1fr 1fr}.footer-col:last-child{display:none}}
+@media(max-width:620px){.announcement{font-size:9px}.nav{height:65px}.brand{font-size:23px}.nav-links{display:none}.menu-btn{display:flex}.nav-actions .cart-label{display:none}.hero{grid-template-columns:1fr;padding:26px 0 39px;gap:29px}.hero-copy{padding:8px 0 0}h1{font-size:54px;max-width:440px}.hero-copy>p{font-size:14px}.hero-art{min-height:340px;margin-right:10px}.hero-photo{left:17px;bottom:18px}.round-stamp{width:74px;height:74px;font-size:12px;right:-8px}.photo-caption{padding:11px 14px;max-width:190px}.photo-caption strong{font-size:16px}.section{padding:39px 0}.section-head{align-items:flex-start;flex-direction:column;margin-bottom:18px}.section-intro{font-size:12px}.categories{gap:9px}.category{min-height:155px}.category-text{left:11px;bottom:11px}.category-text strong{font-size:19px}.category-text span{font-size:10px}.shop-section{padding:41px 0 46px}.shop-tools{width:100%}.search{flex:1;min-width:100%}.filter{flex:1}.product-grid{gap:22px 11px}.product-name{font-size:17px}.product-bottom{align-items:flex-start;flex-direction:column;gap:2px}.story{grid-template-columns:1fr;gap:28px}.story-image{height:300px;margin-right:10px}.story-copy h2{font-size:37px}.values{grid-template-columns:1fr;margin-top:25px}.value,.value:first-child{padding:16px 0;border-right:0;border-bottom:1px solid var(--line)}.value:last-child{border-bottom:0}.newsletter-inner{align-items:flex-start;flex-direction:column}.newsletter h2{font-size:29px}.newsletter-form{max-width:none}.footer-main{grid-template-columns:1fr 1fr;gap:25px}.footer-about{grid-column:1/-1}.footer-col:last-child{display:block}.footer-bottom{font-size:9px}}
+@media(hover:none){.quick-add{display:none}.product-add-mobile{display:block}}
+
+/* Mobile navigation menu fix: preserve existing layout and styles */
+@media(max-width:620px){
+  .nav{position:relative}
+  .nav-links.mobile-open{display:flex !important;position:absolute;top:65px;left:0;right:0;flex-direction:column;align-items:stretch;gap:0;padding:8px 18px;background:var(--white);border:1px solid var(--line);box-shadow:0 12px 24px #20282018;z-index:30}
+  .nav-links.mobile-open a{display:block;padding:14px 4px;border-bottom:1px solid var(--line);font-size:14px}
+  .nav-links.mobile-open a:last-child{border-bottom:0}
+}
+</style>
+</head>
+<body>
+<div class="announcement">A little piece of home, wherever you are &nbsp; · &nbsp; Thoughtfully made in Uganda</div>
+<header class="header">
+  <div class="wrap nav">
+    <a class="brand" href="#" aria-label="LocalCart home"><span class="brand-mark">L</span><span>Local<span>Cart</span></span></a>
+    <nav class="nav-links" id="navLinks" aria-label="Main navigation"><a href="#shop">Shop all</a><a href="#categories">Collections</a><a href="#story">Our story</a></nav>
+    <div class="nav-actions">
+      <button class="icon-btn menu-btn" id="menuBtn" aria-label="Open navigation menu" aria-expanded="false" aria-controls="navLinks" type="button">☰</button>
+      <button class="icon-btn" id="cartOpen" aria-label="Open shopping cart"><span>Bag</span><span class="cart-label"> / </span><span class="cart-count" id="cartCount">0</span></button>
+    </div>
+  </div>
+</header>
+<main>
+<section class="wrap hero">
+  <div class="hero-copy">
+    <div class="eyebrow">Art, craft & culture</div>
+    <h1>Made here.<br><em>Loved everywhere.</em></h1>
+    <p>Meet the makers, patterns and small details that make our corner of the world special. Discover thoughtful objects and contemporary design rooted in Ugandan creativity.</p>
+    <div class="hero-buttons"><a class="button" href="#shop">Explore the collection <span>↗</span></a><a class="button secondary" href="#story">Meet LocalCart</a></div>
+    <div class="hero-meta"><span><b>✳</b> Maker-led finds</span><span><b>✳</b> Culture with care</span><span><b>✳</b> Prices in UGX</span></div>
+  </div>
+  <div class="hero-art">
+    <div class="hero-photo"><img src="https://images.unsplash.com/photo-1590736969955-71cc94901144?auto=format&fit=crop&w=1100&q=85" alt="Handwoven natural fibre basket and craft details" onerror="this.src='https://images.unsplash.com/photo-1490312278390-ab64016e0aa9?auto=format&fit=crop&w=1100&q=80'"></div>
+    <div class="round-stamp">Made with<br>meaning<br><span>✳ Local stories</span></div>
+    <div class="photo-caption"><small>The LocalCart edit / 01</small><strong>Objects with a story.</strong></div>
+  </div>
+</section>
+<section class="wrap section" id="categories">
+  <div class="section-head"><div><div class="section-kicker">Find your kind of beautiful</div><h2>Shop by collection</h2></div><p class="section-intro">From hand-finished details to expressive prints, every collection brings a little character into your everyday.</p></div>
+  <div class="categories">
+    <button class="category" data-category="Crafts"><img src="https://images.unsplash.com/photo-1490312278390-ab64016e0aa9?auto=format&fit=crop&w=600&q=80" alt="Handmade craft objects"><span class="category-text"><small>01 / Made by hand</small><strong>Crafts</strong><span>Woven, shaped, finished ↗</span></span></button>
+    <button class="category" data-category="Art & Prints"><img src="https://images.unsplash.com/photo-1579783902614-a3fb3927b6a5?auto=format&fit=crop&w=600&q=80" alt="Art prints and gallery artwork"><span class="category-text"><small>02 / Bring walls to life</small><strong>Art & prints</strong><span>Colour with a point of view ↗</span></span></button>
+    <button class="category" data-category="Wearables"><img src="https://images.unsplash.com/photo-1610701596007-11502861dcfa?auto=format&fit=crop&w=600&q=80" alt="Artisan-made ceramic and design details"><span class="category-text"><small>03 / Everyday expression</small><strong>Wearables</strong><span>Small details, big feeling ↗</span></span></button>
+    <button class="category" data-category="Home & Living"><img src="https://images.unsplash.com/photo-1610701596007-11502861dcfa?auto=format&fit=crop&w=600&q=80" alt="Handcrafted homeware"><span class="category-text"><small>04 / Make space yours</small><strong>Home & living</strong><span>Useful things, made special ↗</span></span></button>
+  </div>
+</section>
+<section class="shop-section" id="shop">
+  <div class="wrap">
+    <div class="section-head"><div><div class="section-kicker">The current edit</div><h2>Good things, made close to home.</h2><p class="section-intro" style="margin-top:9px">A small, considered collection to start with.</p></div>
+      <div class="shop-tools"><label class="search"><span>⌕</span><input id="searchInput" type="search" placeholder="Search the collection…" aria-label="Search products"></label><select id="categoryFilter" class="filter" aria-label="Filter category"><option value="All">All collections</option><option>Crafts</option><option>Art & Prints</option><option>Wearables</option><option>Home & Living</option></select><select id="sortFilter" class="filter" aria-label="Sort products"><option value="featured">Featured</option><option value="low">Price: low to high</option><option value="high">Price: high to low</option></select></div>
+    </div>
+    <div class="product-grid" id="productGrid" aria-live="polite"></div>
+  </div>
+</section>
+<section class="wrap section" id="story">
+  <div class="story">
+    <div class="story-image"><img src="https://images.unsplash.com/photo-1452860606245-08befc0ff44b?auto=format&fit=crop&w=900&q=85" alt="Creative studio with handmade objects and design materials" onerror="this.src='https://images.unsplash.com/photo-1455390582262-044c3297b3b9?auto=format&fit=crop&w=900&q=80'"></div>
+    <div class="story-copy"><div class="section-kicker">A marketplace with a point of view</div><h2>Local isn't a trend.<br>It's a treasure.</h2><p>LocalCart is a concept shop celebrating the makers, artists and creative ideas around us. We believe the things we live with should carry a little story — the hand that shaped them, the place that inspired them, or the tradition they reinterpret.</p><p>We bring craft and contemporary design into one easy-to-explore space, helping curious shoppers discover local creativity beyond the familiar.</p><div class="story-note">“Buy less ordinary. Choose things that mean something.”</div><a class="button secondary" href="#shop">Find your next favourite ↗</a></div>
+  </div>
+  <div class="values"><div class="value"><b>Made with intention</b><p>Thoughtful design over throwaway trends.</p></div><div class="value"><b>Rooted in place</b><p>Celebrating the many stories in Ugandan creativity.</p></div><div class="value"><b>Good finds, fairly shown</b><p>Clear prices and simple shopping, without the fuss.</p></div></div>
+</section>
+<section class="newsletter"><div class="wrap newsletter-inner"><div><h2>Good things are worth sharing.</h2><p>Get occasional notes on new finds, makers and creative stories.</p></div><form class="newsletter-form" id="newsletterForm"><input type="email" placeholder="Your email address" aria-label="Your email address" required><button type="submit">KEEP ME POSTED ↗</button></form></div></section>
+</main>
+<footer><div class="wrap"><div class="footer-main">
+  <div class="footer-about"><a class="brand" href="#"><span class="brand-mark">L</span><span>Local<span>Cart</span></span></a><p>A home for art, craft and culture-led design. Discover the makers and small details that make local creativity worth celebrating.</p></div>
+  <div class="footer-col"><b>Explore</b><a href="#shop">Shop all</a><a href="#categories">Collections</a><a href="#story">Our story</a></div>
+  <div class="footer-col"><b>Good to know</b><a href="#story">Our values</a><a href="#shop">Shopping demo</a><a href="#story">For makers</a></div>
+  <div class="footer-col"><b>Say hello</b><a href="mailto:wamalasolomon4@gmail.com">Solomon wamala(developer)</a><a href="#story">Made with care in Uganda</a></div>
+</div><div class="footer-bottom"><span>© <span id="year"></span> LocalCart. A creative-built shop concept.</span><span>Art · Craft · Culture · Uganda</span></div></div></footer>
+
+<div class="drawer-backdrop" id="drawerBackdrop"></div>
+<aside class="cart-drawer" id="cartDrawer" aria-label="Shopping cart" aria-modal="true" role="dialog">
+  <div class="drawer-head"><h2>Your bag <span style="font:12px var(--sans);color:var(--muted)" id="bagSubtitle">(0 items)</span></h2><button class="close-btn" id="cartClose" aria-label="Close cart">×</button></div>
+  <div class="cart-items" id="cartItems"></div>
+  <div class="cart-summary" id="cartSummary"></div>
+</aside>
+<div class="modal-backdrop" id="modalBackdrop"></div>
+<section class="modal" id="checkoutModal" role="dialog" aria-modal="true" aria-labelledby="checkoutTitle">
+  <button class="close-btn" id="checkoutClose" style="float:right" aria-label="Close checkout">×</button>
+  <h2 id="checkoutTitle">Almost yours.</h2><p>Complete this demo checkout to see how an order flow could work.</p>
+  <p class="notice">project demo: no payment will be collected and no real order is sent.</p>
+  <form id="checkoutForm">
+    <label class="form-field"><span>Your name</span><input name="name" required placeholder="e.g. Amina"></label>
+    <label class="form-field"><span>Phone number</span><input name="phone" required type="tel" placeholder="+256 …"></label>
+    <label class="form-field"><span>Delivery area</span><input name="area" required placeholder="Town or neighbourhood"></label>
+    <label class="form-field"><span>Preferred delivery</span><select name="delivery"><option>Arrange delivery with seller</option><option>Pick-up (details to be confirmed)</option></select></label>
+    <button class="button" type="submit">Place demo order ↗</button>
+  </form>
+</section>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+<script>
+(() => {
+  const products = [
+    {id:1,name:"Kikuubo Weave Basket",category:"Crafts",type:"Handwoven · Natural fibre",price:48000,tag:"Maker's pick",image:"https://images.unsplash.com/photo-1490312278390-ab64016e0aa9?auto=format&fit=crop&w=700&q=82",alt:"Natural woven basket"},
+    {id:2,name:"Earth Lines Art Print",category:"Art & Prints",type:"Limited print · A4",price:35000,tag:"New",image:"https://images.unsplash.com/photo-1579783902614-a3fb3927b6a5?auto=format&fit=crop&w=700&q=82",alt:"Framed contemporary art print"},
+    {id:3,name:"Clay Morning Mug",category:"Home & Living",type:"Ceramic · Handmade feel",price:28000,tag:"Everyday favourite",image:"https://images.unsplash.com/photo-1578749556568-bc2c40e68b61?auto=format&fit=crop&w=700&q=82",alt:"Handmade ceramic mug"},
+    {id:4,name:"Colour Story Earrings",category:"Wearables",type:"Beaded · Lightweight",price:22000,tag:"Small batch",image:"https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?auto=format&fit=crop&w=700&q=82",alt:"Colourful artisan earrings"},
+    {id:5,name:"Sunday Table Bowl",category:"Home & Living",type:"Stoneware · Serving",price:42000,tag:"Thoughtful gift",image:"https://images.unsplash.com/photo-1610701596007-11502861dcfa?auto=format&fit=crop&w=700&q=82",alt:"Craft ceramic homeware"},
+    {id:6,name:"Market Day Tote",category:"Wearables",type:"Reusable · Everyday carry",price:30000,tag:"Easy favourite",image:"https://images.unsplash.com/photo-1590874103328-eac38a683ce7?auto=format&fit=crop&w=700&q=82",alt:"Everyday tote bag"},
+    {id:7,name:"Bold Shapes Print",category:"Art & Prints",type:"Art print · A3",price:55000,tag:"Statement piece",image:"https://images.unsplash.com/photo-1541961017774-22349e4a1262?auto=format&fit=crop&w=700&q=82",alt:"Colourful abstract artwork"},
+    {id:8,name:"Little Woven Catchall",category:"Crafts",type:"Handwoven · Multi-use",price:26000,tag:"Useful beauty",image:"https://images.unsplash.com/photo-1600166898405-da9535204843?auto=format&fit=crop&w=700&q=82",alt:"Woven handmade storage basket"}
+  ];
+  const $ = id => document.getElementById(id);
+  const money = n => "UGX " + Math.round(n).toLocaleString("en-UG");
+  let cart = {};
+  try { cart = JSON.parse(localStorage.getItem("localcart-bag") || "{}") || {}; } catch {}
+  let toastTimer;
+  function toast(msg){const t=$("toast");t.textContent=msg;t.classList.add("show");clearTimeout(toastTimer);toastTimer=setTimeout(()=>t.classList.remove("show"),2400);}
+  function save(){try{localStorage.setItem("localcart-bag",JSON.stringify(cart));}catch{}}
+  function renderProducts(){
+    const q=$("searchInput").value.trim().toLowerCase(), cat=$("categoryFilter").value, sort=$("sortFilter").value;
+    let list=products.filter(p=>(cat==="All"||p.category===cat)&&[p.name,p.category,p.type].join(" ").toLowerCase().includes(q));
+    if(sort==="low")list.sort((a,b)=>a.price-b.price); if(sort==="high")list.sort((a,b)=>b.price-a.price);
+    $("productGrid").innerHTML=list.length?list.map(p=>`<article class="product"><div class="product-image"><img loading="lazy" src="${p.image}" alt="${p.alt}" onerror="this.style.opacity='.15'"><span class="product-tag">${p.tag}</span><button class="quick-add" data-add="${p.id}">+ Add to bag</button></div><div class="product-info"><div class="product-type">${p.category} / ${p.type}</div><h3 class="product-name">${p.name}</h3><div class="product-bottom"><span class="price">${money(p.price)}</span><span class="product-rating">✳ Curated locally</span></div><button class="product-add-mobile" data-add="${p.id}">Add to bag +</button></div></article>`).join(""):`<div class="empty-state"><strong>No finds just yet.</strong><p>Try another search or collection.</p><button class="button secondary" id="clearSearch">Clear filters</button></div>`;
+  }
+  function count(){return Object.values(cart).reduce((n,q)=>n+q,0)}
+  function renderCart(){
+    $("cartCount").textContent=count();$("bagSubtitle").textContent=`(${count()} item${count()===1?"":"s"})`;
+    const items=products.filter(p=>cart[p.id]>0);
+    if(!items.length){$("cartItems").innerHTML='<div class="cart-empty"><div>◌</div><strong>Your bag is taking a little break.</strong><p>Find something that feels like you.</p><button class="button" id="browseBtn">Explore the collection</button></div>';$("cartSummary").innerHTML="";return;}
+    $("cartItems").innerHTML=items.map(p=>`<div class="cart-row"><img src="${p.image}" alt="${p.alt}"><div><h3>${p.name}</h3><small>${money(p.price)} each</small><div class="qty"><button data-qty="${p.id}" data-delta="-1" aria-label="Decrease quantity">−</button><span>${cart[p.id]}</span><button data-qty="${p.id}" data-delta="1" aria-label="Increase quantity">+</button><button data-remove="${p.id}" style="border:0;width:auto;text-decoration:underline;font-size:10px;color:var(--muted)">Remove</button></div></div><div class="cart-price">${money(p.price*cart[p.id])}</div></div>`).join("");
+    const subtotal=items.reduce((sum,p)=>sum+p.price*cart[p.id],0);
+    $("cartSummary").innerHTML=`<div class="summary-line"><span>Subtotal</span><strong>${money(subtotal)}</strong></div><div class="summary-line"><span>Delivery</span><span>Arranged after order</span></div><div class="summary-line total"><span>Estimated total</span><span>${money(subtotal)}</span></div><button class="button" id="checkoutBtn">Continue to checkout ↗</button><p style="font-size:10px;color:var(--muted);text-align:center;margin:10px 0 0">Checkout is a demo — no payment is taken.</p>`;
+  }
+  function add(id){cart[id]=(cart[id]||0)+1;save();renderCart();toast("Added to your bag.");}
+  function openCart(){renderCart();$("drawerBackdrop").classList.add("open");$("cartDrawer").classList.add("open");document.body.style.overflow="hidden";}
+  function closeCart(){$("drawerBackdrop").classList.remove("open");$("cartDrawer").classList.remove("open");document.body.style.overflow="";}
+  function openCheckout(){if(!count()){toast("Your bag is empty.");return;}closeCart();$("modalBackdrop").classList.add("open");$("checkoutModal").classList.add("open");document.body.style.overflow="hidden";}
+  function closeCheckout(){$("modalBackdrop").classList.remove("open");$("checkoutModal").classList.remove("open");document.body.style.overflow="";}
+  document.addEventListener("click",e=>{
+    const addBtn=e.target.closest("[data-add]");if(addBtn){add(Number(addBtn.dataset.add));return;}
+    const catBtn=e.target.closest("[data-category]");if(catBtn){$("categoryFilter").value=catBtn.dataset.category;$("shop").scrollIntoView({behavior:"smooth"});renderProducts();return;}
+    const qtyBtn=e.target.closest("[data-qty]");if(qtyBtn){const id=qtyBtn.dataset.qty;cart[id]=Math.max(0,(cart[id]||0)+Number(qtyBtn.dataset.delta));if(!cart[id])delete cart[id];save();renderCart();return;}
+    const rem=e.target.closest("[data-remove]");if(rem){delete cart[rem.dataset.remove];save();renderCart();toast("Item removed.");return;}
+    if(e.target.closest("#clearSearch")){$("searchInput").value="";$("categoryFilter").value="All";$("sortFilter").value="featured";renderProducts();return;}
+    if(e.target.closest("#browseBtn")){closeCart();$("shop").scrollIntoView({behavior:"smooth"});return;}
+    if(e.target.closest("#checkoutBtn")){openCheckout();return;}
+  });
+  $("searchInput").addEventListener("input",renderProducts);$("categoryFilter").addEventListener("change",renderProducts);$("sortFilter").addEventListener("change",renderProducts);
+  $("cartOpen").addEventListener("click",openCart);$("cartClose").addEventListener("click",closeCart);$("drawerBackdrop").addEventListener("click",closeCart);
+  $("checkoutClose").addEventListener("click",closeCheckout);$("modalBackdrop").addEventListener("click",closeCheckout);
+  $("checkoutForm").addEventListener("submit",e=>{e.preventDefault();const fd=new FormData(e.target);const name=fd.get("name").trim();const total=products.reduce((s,p)=>s+p.price*(cart[p.id]||0),0);closeCheckout();cart={};save();renderCart();e.target.reset();toast(`Demo order complete, ${name}! Total: ${money(total)}. No payment was taken.`);});
+  $("newsletterForm").addEventListener("submit",e=>{e.preventDefault();e.target.reset();toast("Thanks for your interest! Newsletter sign-up is a demo.");});
+  const menuBtn = $("menuBtn");
+  const navLinks = $("navLinks");
+  menuBtn.addEventListener("click", () => {
+    const isOpen = navLinks.classList.toggle("mobile-open");
+    menuBtn.setAttribute("aria-expanded", String(isOpen));
+    menuBtn.setAttribute("aria-label", isOpen ? "Close navigation menu" : "Open navigation menu");
+    menuBtn.textContent = isOpen ? "×" : "☰";
+  });
+  navLinks.addEventListener("click", event => {
+    if (event.target.closest("a")) {
+      navLinks.classList.remove("mobile-open");
+      menuBtn.setAttribute("aria-expanded", "false");
+      menuBtn.setAttribute("aria-label", "Open navigation menu");
+      menuBtn.textContent = "☰";
+    }
+  });
+  document.addEventListener("keydown", event => {
+    if (event.key === "Escape") {
+      navLinks.classList.remove("mobile-open");
+      menuBtn.setAttribute("aria-expanded", "false");
+      menuBtn.setAttribute("aria-label", "Open navigation menu");
+      menuBtn.textContent = "☰";
+    }
+  });
+  $("year").textContent=new Date().getFullYear();renderProducts();renderCart();
+})();
+</script>
+</body>
+</html>
